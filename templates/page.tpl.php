@@ -40,10 +40,12 @@
 	
 	</header>
 	
-	  <div role="main" class="col main-content">
+	  <div role="main" class="col main-content <?php print $classes; ?>">
 	    <?php print render($title_prefix); ?>
 	    <?php if ($title): ?>
+	      <?php print render($title_prefix); ?>
 	      <h1><?php print $title; ?></h1>
+	      <?php print render($title_suffix); ?>
 	    <?php endif; ?>
 	    <?php print render($title_suffix); ?>
 	
